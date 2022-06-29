@@ -1,0 +1,191 @@
+@charset "UTF-8"; 
+
+/* IMPORTAÇÃO DAS FONTES */
+@font-face {
+    font-family: "fonte_android";
+    src: url("fontes/idroid.otf") format("opentype");
+    font-weight: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* VARIÁVEIS */
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: "fonte_android", cursive;
+}
+/* ESTILO GERAL */ 
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    min-width: 320px;
+    max-width: 1440px;
+}
+p{  
+    text-align: justify;
+    text-indent: 20px;
+}
+/* CABEÇALHO */ 
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor1));
+    padding: 10px 10px 1px 10px;
+    margin: -10px -10px -1px -10px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    min-height: 120px;
+    min-width: 320px;
+    max-width: 1440px;
+}
+#parag_header{
+    margin: 1px 1px 1px 1px;
+    text-align: center;
+    font-size: 18px;
+}
+/* LINKS DO MENU BAR*/ 
+nav{
+    background-color: var(--cor4);
+    padding: 16px 10px 1px 10px;
+    margin: 0px -10px;
+    border: 4px solid var(--cor5);
+}
+nav a{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    margin: 26px; 
+}
+nav a:hover{
+    padding: 10px;
+    background-color: var(--cor2);
+    font-weight: bolder;
+    border-radius: 5px 5px;
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+/* CAIXA DO MAIN */ 
+main{
+    background-color: white;
+    padding: 13px;
+    margin: auto;
+    min-width: 250px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* IMAGENS DO MAIN */
+.img_main{
+    width: 100%;
+}
+/* 2º TÍTULO: HISTÓRIA DO MASCOTE DO ANDROID */ 
+#h1_main{
+    font-family: var(--fonte-android);
+    text-indent: 30px;
+    color: var(--cor5);
+}
+/* ARTIGOS DO MAIN*/
+.h2_article{
+    font-family: var(--fonte-android);
+    color: white;
+    text-indent: 30px;
+    background-image: linear-gradient(to right, var(--cor4), white)
+} 
+/* PARÁGRAFOS DO MAIN */
+main p{
+    margin: 26px 20px 19px 0px;
+    text-indent: 32px;
+    line-height: 1.5em;
+}
+/* CAIXA DA SEÇÃO DO VÍDEO */
+#video{
+    background-color: var(--cor4);
+    margin: 1px -13px 1px -13px;
+    height: 450px;
+    position: relative;
+} 
+#video > iframe{
+   position: absolute;
+   top: 25px;
+   left: 33px;
+   width: 90%;
+   height: 90%;
+} 
+/* CAIXA DO ASIDE */
+aside{
+    background-color: white;
+    padding: 21px;
+    border-radius: 0px 0px 5px 5px;
+}
+/* TÍTULO DO ASIDE : QUER APRENDER MAIS? */
+#h3_aside{
+    background-color: var(--cor3);
+    border-radius: 5px 5px 0px 0px;
+    text-indent: 20px;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+/* ARTIGO DO ASIDE */
+#extra_aside{
+    background-color: rgba(128, 128, 128, 0.283);
+    text-align: justify;
+    padding: 1px 15px;
+    text-indent: 20px;
+    border-radius: 0px 0px 5px 5px;
+}
+/* PARÁGRAFOS DO ASIDE DENTRO DO ARTICLE */
+#extra_aside p{
+    margin: 21px 0px;
+    line-height: 1.5em;
+}
+/* PARÁGRAFO DO ASIDE */
+#p_aside{
+    margin: 26px 20px 2px 0px;
+    text-indent: 32px;
+    line-height: 1.5em;
+}
+/* LISTA DO ASIDE */
+ul{
+    columns: 2;
+    list-style-type: "\2705";
+
+}
+/* RODAPÉ */
+footer{
+    margin: 13px -8px -8px -8px;
+    background-color: var(--cor5);
+    padding: 7px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 13px;
+}
+/* DESTAQUES RODAPÉ */
+span{
+    font-weight: bold;
+}
+/* IMAGENS */
+div{
+    text-align: center;
+}
+/* DESTAQUES NEGRITO VERDE */
+.negrito_verde{
+    color: green;
+}
+/* GERAL LINKS */
+a:hover{
+    padding: 5px;
+    background-color: lightgrey;
+    font-weight: bolder;
+    border-radius: 5px 5px;
+    text-decoration: underline;
+}
