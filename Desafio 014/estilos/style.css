@@ -10,7 +10,7 @@ html, body{
     width: 100vw;
 }
 body{
-    background: url("imagens/fundo-madeira.jpg") top center no-repeat fixed;
+    background: url("../imagens/fundo-madeira.jpg") top center no-repeat fixed;
     background-size: cover;
 }
 main{
@@ -24,7 +24,14 @@ section#phone{
     transform: translate(-50%, -50%);
     height: 500px;
     width: 248px;
-    background:  url("imagens/frame-iphone.png") center center no-repeat fixed;
+    background:  url("../imagens/frame-iphone.png") center center no-repeat fixed;
     background-size: contain;
 
+}
+iframe#screen{
+    position: relative;
+    top: 64px;
+    left: 18px;
+    height: 376px;
+    width: 212px;
 }
